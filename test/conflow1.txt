@@ -1,2 +1,0 @@
-str input = STRICT Input::get("Enter your input:" );
-Output::print("Your" + input)

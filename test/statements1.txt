@@ -1,4 +1,0 @@
-int x;
-int x = 10;
-int x, y, z;
-int x = 10, y = 5, z = 2;

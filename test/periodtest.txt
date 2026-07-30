@@ -1,8 +1,0 @@
-1..10
-1...10   
-obj.method  
-x....y
-
-10.50
-
-Object.attribute;

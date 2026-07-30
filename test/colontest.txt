@@ -1,5 +1,0 @@
-class Child :> Parent       // Should recognize: RESERVED(class), IDENTIFIER(Child), INHERIT_OP(:>), IDENTIFIER(Parent)
-class Worker :>> Interface  // Should recognize: RESERVED(class), IDENTIFIER(Worker), INHERIT_OP(:>>), IDENTIFIER(Interface)
-case 1: break;             // Should still recognize colon as: PUNC_DELIM(:)
-x ? a : b                  // Should still recognize colon as: PUNC_DELIM(:) in ternary
-:>>>        

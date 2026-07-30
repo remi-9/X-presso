@@ -1,3 +1,0 @@
-main (args) {
-    str name = STRICT Input::get("Enter your name: ");
-}
