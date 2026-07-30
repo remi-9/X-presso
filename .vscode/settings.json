@@ -1,12 +1,7 @@
-{
-    "java.excludeFolders": ["**/bin"], // Excludes from Java error checking
-    "files.exclude": {
-        "**/bin": false // Ensures it is visible in the file explorer
-    },
-    "search.exclude": {
-        "**/bin": false // Allows searching within the folder
-    },
+﻿{
     "java.project.sourcePaths": [
-        "code" // Explicitly specify the source folder to avoid issues
-    ]
+        "src/main/java"
+    ],
+    "java.project.outputPath": "out",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
