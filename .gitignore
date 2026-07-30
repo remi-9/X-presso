@@ -1,0 +1,23 @@
+# Build
+out/
+target/
+*.class
+*.jar
+*.war
+sources.txt
+
+# Analyzer output (generated)
+output/
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.tmp
+.cursor/
