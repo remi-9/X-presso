@@ -1,0 +1,13 @@
+double grade = 1.25;
+str comment;
+switch-fall (grade) {
+	case [1.00]: {
+	    status = "Great";
+}
+    case [1.25]: {
+	    status = "Good";
+    }
+default: {
+	    status = "Nice try";;
+    }
+}

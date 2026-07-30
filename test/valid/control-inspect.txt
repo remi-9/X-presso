@@ -1,0 +1,14 @@
+public method(int c) -> parameter.isValid() {
+
+    int a = c;
+    int b = ALIAS a;
+
+    inspect{						
+        int result = a/b;
+        Output::print("Result: " + result);
+        Int c = 20;
+        Int d = 10;
+        Int secondResult = c/d;
+        Output::print("Second Result: " +secondResult);
+    }
+}

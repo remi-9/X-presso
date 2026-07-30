@@ -1,0 +1,8 @@
+abstract
+strictfp
+
+System
+void
+
+main
+long

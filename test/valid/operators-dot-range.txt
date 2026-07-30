@@ -1,0 +1,7 @@
+1..10
+1...10   
+obj.method  
+
+10.50
+
+Object.attribute;

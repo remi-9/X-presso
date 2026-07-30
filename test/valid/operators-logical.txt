@@ -1,0 +1,6 @@
+x || y        // Should recognize: IDENTIFIER(x), LOG_OP(||), IDENTIFIER(y)
+a && b        // Should recognize: IDENTIFIER(a), LOG_OP(&&), IDENTIFIER(b)
+!true         // Should recognize: LOG_OP(!), BOOL_LIT(true)
+a != b        // Should still recognize as: IDENTIFIER(a), REL_OP(!=), IDENTIFIER(b)
+x | y         // Should handle as bitwise, not logical
+a & b         // Should handle as bitwise, not logical

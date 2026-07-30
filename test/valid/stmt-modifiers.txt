@@ -1,0 +1,9 @@
+public int x;
+public static int y;
+
+static int x;
+public final int y = 10;
+
+private int x, y, z;
+
+private int x, y, z;

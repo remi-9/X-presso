@@ -1,0 +1,1 @@
+public class Test :> Parent1, Parent2 :>> Interface1, Interface2 { }

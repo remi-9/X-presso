@@ -1,0 +1,57 @@
+// class OperatorTest {
+    // void testAllOperators() {
+        // Assignment Operators
+        int a = 5;
+        a += 3;
+        a -= 2;
+        a *= 4;
+        a /= 2;
+        a %= 3;
+        int b ?= null;
+
+        // Arithmetic Operators
+        int sum = 5 + 3;
+        int diff = 10 - 4;
+        int prod = 6 * 2;
+        int quot = 15 / 3;
+        int rem = 17 % 5;
+        int exp = 2 ^ 3;
+
+        // Logical Operators
+        boolean test1 = true || false;
+        boolean test2 = true && false;
+        boolean test3 = !true;
+
+        // Relational Operators
+        boolean comp1 = 5 == 5;
+        boolean comp2 = 6 != 7;
+        boolean comp3 = 8 < 9;
+        boolean comp4 = 10 > 9;
+        boolean comp5 = 11 <= 11;
+        boolean comp6 = 12 >= 12;
+
+        // Bitwise Operators
+        int bit1 = 5 & 3;
+        int bit2 = 5 | 3;
+        int bit3 = 5 ^| 3;
+        int bit4 = ~5;
+        int bit5 = 5 << 2;
+        int bit6 = 20 >> 2;
+        int bit7 = -20 >>> 2;
+
+        // Unary Operators
+        int x = 5;
+        x++;
+        ++x;
+        x--;
+        --x;
+        x**;
+        int y = -x;
+        int z = +x;
+
+        // Method Operators
+        object.method();
+        Class::method;
+        value->process();
+    // }
+// }

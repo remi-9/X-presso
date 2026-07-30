@@ -1,0 +1,6 @@
+$(1,2)        // Valid: COMP_LIT($(1,2))
+$(1.5,-2.3)   // Valid: COMP_LIT($(1.5,-2.3))
+$(1)          // Invalid: missing comma and imaginary part
+$(1,2,3)      // Invalid: too many components
+$(a,b)        // Invalid: non-numeric components
+$1,2)         // Invalid: missing opening parenthesis

@@ -1,0 +1,15 @@
+List<String> list = Arrays.asList("example", "word", "list", "longword", "short", "another");  
+
+for (int i in 1...100) {  
+    process(value);  
+    value += 10;  
+    for (int j in 0...10) {
+        if (j < 5) break(2);
+
+        for (str word in list where-type == str && word.length() > 3) {  
+            for (int i = 0; i ... 10; exit-when someCondition(i); i++) {
+                Output::print(i);
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+birthday::after([2004|01|01])
+
+birthday::month() < 6
+
+Frac ratio = [4|3];
+ratio::toMixed()
+
+int A = 5;
+A**;

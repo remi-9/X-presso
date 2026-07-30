@@ -1,0 +1,23 @@
+class ObjectDelimTest {
+    void testDelimiters() {
+        // Object Delimiters - should be recognized
+        <String> str;
+        <MyClass> obj;
+        <CustomType> custom;
+        
+        // Operations - should still work
+        int a = 5;
+        if (a < 10) {
+            a++;
+        }
+        boolean test = (a <= 20);
+        int shift = a << 2;
+        
+        // Invalid cases - should generate errors
+        <> empty;        // missing type
+        <123> invalid;   // starts with number
+        <Test            // missing closing bracket
+        String> broken;  // missing opening bracket
+        < Space > bad;   // spaces not allowed
+    }
+}

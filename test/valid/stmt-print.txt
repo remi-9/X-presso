@@ -1,0 +1,8 @@
+int age = 21;
+Output::print(age);
+
+str name = "Tim";
+Output::print("Hello, " + name);
+
+int age = 21;
+Output::print("I'm " + age + " years old.");

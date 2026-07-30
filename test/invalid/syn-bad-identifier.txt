@@ -1,0 +1,54 @@
+public class LexicalAnalyzerTest {
+
+    public static void main(String[] args) {
+        
+        int count = 10;  
+        
+        float x = 3.14f;  
+        
+        int a, b, c, d, e, f;
+        a = b + c * (d - e) / f;  
+        c = -a;
+        b++;
+        
+        
+    
+        if (x == 5) { 
+            y = 10;   
+        }
+        
+        String str = "Hello,\tworld!\n";  // Test string literal assignment
+        
+        
+        // This is a single-line comment
+        /* This is a 
+           multi-line comment */
+        
+        result = (x + y * z) / (w - 2) % 3;  
+        
+        
+        if (x > 0 && y < 10 || z == 5) {  
+            return true;
+        }
+        
+        a += b * (c - d) / e;  
+        
+        int 1variable = 10;  
+        
+       
+        a = (b = (c + d)); 
+        
+        
+        char ch = 'A'; 
+        
+      
+        x = 10; y = 20; z = x + y;  
+
+        bool isTrue = true;
+        bool isFalse = false;
+        
+    }
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+}

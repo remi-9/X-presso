@@ -1,0 +1,3 @@
+str userName = STRICT Input::get("Enter your name: ");
+
+Output::print("Welcome, " + userName);

@@ -1,0 +1,10 @@
+/ a + b comment
+
+/
+a + b
+comment
+*/
+
+int a = 10;
+int b = 8;
+int c = a * b;

@@ -1,0 +1,13 @@
+while value < 100 exit-when isComplete(value) {  
+    process(value);  
+    value += 10;  
+}
+
+do {  
+    process(value);  
+    value += 10;  
+} while value < 100 exit-when isComplete(value);
+
+do for (item in collection) {  
+    process(item);  
+} while moreItemsExist(collection) exit-when isComplete(item);

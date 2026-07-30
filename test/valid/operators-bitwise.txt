@@ -1,0 +1,12 @@
+x >>> 2       // Should recognize: IDENTIFIER(x), BIT_OP(>>>), INT_LIT(2)
+y >> 1        // Should recognize: IDENTIFIER(y), BIT_OP(>>), INT_LIT(1)
+z << 3        // Should recognize: IDENTIFIER(z), BIT_OP(<<), INT_LIT(3)
+a & b         // Should recognize: IDENTIFIER(a), BIT_OP(&), IDENTIFIER(b)
+c | d         // Should recognize: IDENTIFIER(c), BIT_OP(|), IDENTIFIER(d)
+e ^| f        // Should recognize: IDENTIFIER(e), BIT_OP(^|), IDENTIFIER(f)
+~x            // Should recognize: BIT_OP(~), IDENTIFIER(x)
+
+a < b;
+c > d;
+e <= f;
+g >= h;

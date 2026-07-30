@@ -1,0 +1,7 @@
+[1|2]         // Valid: FRAC_LIT([1|2])
+[22|7]        // Valid: FRAC_LIT([22|7])
+[5|0]         // Invalid: denominator can't be 0
+[1.5|2]       // Invalid: must be integers
+[abc|def]     // Invalid: non-numeric
+[1||2]        // Invalid: extra separator
+[1|2|3]       // Invalid: too many separators

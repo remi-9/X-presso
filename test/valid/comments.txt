@@ -1,0 +1,9 @@
+// comment
+
+/* comment */
+
+/*
+comment
+*/
+
+int num = 5;

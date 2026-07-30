@@ -1,0 +1,8 @@
+int exp = 2 ^ 3; // (wrong, no longer a bit_op but an Arithmetic)
+Class::method; // (not treated as "::" instead as two separate punc_delim)
+
+10.50;
+10..50;
+10...50;
+a...b;
+a..b;

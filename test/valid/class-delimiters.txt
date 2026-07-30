@@ -1,0 +1,10 @@
+class TestClass {
+    public static void main() {
+        int x = (5 + 3);
+        {
+            str name = "John";
+        }
+        double y = 3.14;
+        doSomething(x, y);
+    }
+}

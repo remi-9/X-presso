@@ -1,0 +1,5 @@
+int a = 5;
+float b = 6.89;
+
+Frac c = [1|5];
+Complex d = $(1,5);

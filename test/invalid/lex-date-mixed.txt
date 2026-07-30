@@ -1,0 +1,15 @@
+// Date literals
+[2024|09|20]    // Valid DATE_LIT
+[2024|13|20]    // Invalid - month > 12
+[2024|00|20]    // Invalid - month < 1
+[202|09|20]     // Invalid - year not 4 digits
+[2024|9|20]     // Invalid - month not 2 digits
+[2024|09|2]     // Invalid - day not 2 digits
+
+// Fraction literals
+[1|3]           // Valid FRAC_LIT
+[22|7]          // Valid FRAC_LIT
+[5|0]           // Invalid - zero denominator
+[|3]            // Invalid - missing numerator
+[5|]            // Invalid - missing denominator
+[5.2|3]         // Invalid - not integer

@@ -1,0 +1,31 @@
+class EncapsulatedClass {
+	private {
+		int obj1;
+		str obj2;
+		double obj3;
+		char obj4;
+		int[] arr;
+}
+
+public {
+		int getObj1() {
+			return obj1;
+}
+
+str getObj2() {
+		return obj2;
+}
+
+double getObj3() {
+return obj3;
+}
+
+char getObj4() {
+	return obj4;
+}
+
+int[] getArr() {
+	return arr;
+}
+}
+}

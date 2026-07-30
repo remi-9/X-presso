@@ -1,0 +1,16 @@
+public class Test :> ExtendClass1, ExtendClass2 :>> ImplementCLass1, ImplementClass2 {
+    private {
+        str test = "test";
+    }
+
+    public void change(){
+        this.test = "new";
+    }
+    
+
+   public static void main(str[] args) {
+        Test instance = <Test>();
+        Output::print(instance.test);
+        instance::change();
+    }
+}

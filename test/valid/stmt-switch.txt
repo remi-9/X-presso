@@ -1,0 +1,12 @@
+int num = 1;
+switch (grade) {
+	case 1: {
+        Ouput::print("num: 1");
+    }
+    case 2: {
+        Ouput::print("num: 2");
+    }
+    default: {
+        Ouput::print("num: not 1 or 2");
+    }
+}

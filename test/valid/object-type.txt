@@ -1,0 +1,3 @@
+Number instance = <Number> {5};
+
+a < b;

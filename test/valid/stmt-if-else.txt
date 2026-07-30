@@ -1,0 +1,11 @@
+int b = 0;
+if (isRight) 
+    int b++;
+
+if (b>0) {
+    Output::print(b);
+}
+else {
+    Output::print("Left");
+}
+

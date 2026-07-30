@@ -1,0 +1,10 @@
+class Test {
+    public static void main() {
+        int x = (5 + 3}; // Mismatched bracket
+        int[] arr = [1, 2, 3}; // Wrong closing bracket
+        {{ // Extra opening brace
+        String name = "John"
+        doSomething(x y); // Missing comma
+        @@Override // Double @ sign not allowed
+        int z = {5); // Mismatched delimiters
+    }
