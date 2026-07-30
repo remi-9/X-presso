@@ -90,6 +90,12 @@
     "column": 16
 },
 {
+    "type": "WHITESPACE",
+    "lexeme": " ",
+    "line": 2,
+    "column": 18
+},
+{
     "type": "ARITHMETIC_OP",
     "lexeme": "+",
     "line": 2,
@@ -108,7 +114,7 @@
     "column": 21
 },
 {
-    "type": "PUNC_DELIM",
+    "type": "DELIM",
     "lexeme": ";",
     "line": 2,
     "column": 23
