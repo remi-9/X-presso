@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>X-presso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <span class="steam s1"></span>
+    <span class="steam s2"></span>
+    <span class="steam s3"></span>
+    <span class="bean b1"></span>
+    <span class="bean b2"></span>
+    <span class="bean b3"></span>
+  </div>
+
+  <div class="shell">
+    <header class="hero-bar">
+      <div class="brand-block">
+        <button type="button" class="cup" id="easter-cup" title="Hmm…" aria-label="Espresso cup">
+          <div class="cup-body">
+            <div class="crema"></div>
+            <div class="cup-steam">
+              <i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="cup-handle"></div>
+          <div class="cup-saucer"></div>
+        </button>
+        <div class="brand-copy">
+          <p class="brew-line" id="brew-line">freshly ground · S-presso</p>
+          <h1>X-presso</h1>
+          <p class="tag" id="brand-tag">Lexical &amp; syntax analyzer — pulled like a perfect shot</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="segment" role="group" aria-label="Analysis mode">
+          <button type="button" class="seg active" data-mode="parse" id="mode-parse" title="Lex + Parse">
+            <span class="seg-title">Doppio</span>
+            <span class="seg-sub">lex + parse</span>
+          </button>
+          <button type="button" class="seg" data-mode="lex" id="mode-lex" title="Lex only">
+            <span class="seg-title">Ristretto</span>
+            <span class="seg-sub">lex only</span>
+          </button>
+        </div>
+        <button type="button" class="run" id="btn-run">
+          <span class="run-icon" aria-hidden="true"></span>
+          Pull shot
+          <kbd>⌘↵</kbd>
+        </button>
+      </div>
+    </header>
+
+    <div class="status" id="status" data-state="idle">
+      <span class="dot" aria-hidden="true"></span>
+      <span id="status-text">Counter open — write some S-presso, then pull a shot</span>
+    </div>
+
+    <main class="layout">
+      <section class="pane editor-pane">
+        <div class="pane-label">
+          <span class="pane-title">
+            <span class="ticket">01</span>
+            Recipe
+          </span>
+          <button type="button" class="linkish" id="btn-sample">Reset sample</button>
+        </div>
+        <textarea id="source"></textarea>
+      </section>
+
+      <section class="pane result-pane">
+        <div class="tabs" role="tablist">
+          <button type="button" class="tab active" role="tab" data-tab="tokens" aria-selected="true">
+            Beans <span class="badge" id="token-count">0</span>
+          </button>
+          <button type="button" class="tab" role="tab" data-tab="tree" aria-selected="false">
+            Brew tree
+          </button>
+          <button type="button" class="tab" role="tab" data-tab="errors" aria-selected="false">
+            Spills <span class="badge warn" id="error-count">0</span>
+          </button>
+        </div>
+
+        <div class="tab-panels">
+          <div class="tab-panel active" id="panel-tokens" role="tabpanel">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>Type</th><th>Lexeme</th><th>Line</th><th>Col</th></tr>
+                </thead>
+                <tbody id="tokens"></tbody>
+              </table>
+            </div>
+            <p class="empty-hint" id="tokens-empty">No beans yet — pull a shot to tokenize.</p>
+          </div>
+
+          <div class="tab-panel" id="panel-tree" role="tabpanel" hidden>
+            <div id="tree" class="tree"></div>
+            <p class="empty-hint" id="tree-empty">Brew tree appears after a Doppio shot.</p>
+          </div>
+
+          <div class="tab-panel" id="panel-errors" role="tabpanel" hidden>
+            <ul id="errors" class="errors"></ul>
+            <p class="empty-hint ok" id="errors-empty">Clean cup — no spills.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>X-presso café</span>
+      <span class="sep">·</span>
+      <span id="footer-line">grind → lex → parse → serve</span>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
+  <div id="sparkle-layer" class="sparkle-layer" aria-hidden="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/clike/clike.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
