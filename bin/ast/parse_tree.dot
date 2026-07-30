@@ -1,4 +1,0 @@
-digraph ParseTree {
-    node [shape=ellipse, fontname="Arial"];
-    node_0 [label="SP_PROG"];
-}
